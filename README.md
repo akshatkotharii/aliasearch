@@ -18,6 +18,8 @@ Brief → source map → candidate pool → deduplicate → evidence gates → c
 
 Output stays practical: company, why it fits, public route, contact context, source link, and channel-specific draft. Research notes stay separate from user-facing delivery.
 
+First batch is up to 20 strong contacts. It samples multiple source types before ranking, never pads results with weak names, then asks whether to continue, broaden, narrow, or change direction.
+
 ## Install
 
 ### Claude web / Claude desktop

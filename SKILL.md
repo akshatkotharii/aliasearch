@@ -23,6 +23,12 @@ Run complete customer research for a real offer. Communicate as a capable resear
 5. Show a small reviewed sample and 1–3 draft styles only when feedback could change targeting or voice. Draft for qualified contacts and explicitly approved exploratory leads. Preserve approved sender email structure. Read [outreach.md](references/outreach.md).
 6. Deliver lean contact views with company, route/link, relevant offer, one reason, message, and source ID. Keep detailed evidence and missing gates in ledger. Do not send messages unless separately authorized.
 
+## Search coverage and batch size
+
+Search source families in this order: sector lists (fairs, associations, registries, procurement portals), business directories and marketplaces, company-owned websites, then public social profiles. Use each source for its strength: lists find names; company pages establish products and routes; social profiles add current activity or a public contact route. Do not pretend every platform was searched when access was unavailable.
+
+Before stopping, sample at least three available source families, deduplicate, then deepen only strongest candidates. First delivery target is 20 `contact now` companies. If fewer than 20 pass, deliver all passing companies and state count plus main evidence gap. If more pass, return strongest 20 and retain rest in ledger. After first delivery, ask only whether to continue, narrow, broaden, or change target. Never create a large unreviewed contact dump.
+
 ## Efficiency
 
 Cache each URL and excerpt with date and source ID; dedupe before enrichment. Use code for parsing, normalization, completeness checks, counts, and export. Give AI only compact evidence packets for ambiguous fit and personalized writing. Track unique qualified firms, duplicates, usable routes, time, and tokens by source family; stop low-yield routes. Give parallel agents disjoint source slices and one shared ledger. Never require a GPU, paid API, or a particular research extension. Record access gaps accurately.
