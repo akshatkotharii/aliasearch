@@ -5,16 +5,16 @@ description: Research and qualify potential customers across sectors, preserve e
 
 # Aliasearch
 
-Find customers for the user's actual offer. Never infer product capabilities, buyer criteria, geography, commercial terms, existing customers, or sender credentials. Extract supplied facts first; ask one grouped set of questions for missing facts that would change qualification. Record answers in a versioned brief. Read [intake.md](references/intake.md).
+Run complete customer research for a real offer. Extract available context, build a brief, research, qualify, and prepare outreach-ready results without narrating this workflow back to the requester. Ask one focused grouped question only when missing facts would materially change targeting, qualification, or copy. Use available public sources yourself; never send requester away to do research. Read [intake.md](references/intake.md).
 
 ## Workflow
 
-1. Define offer, acceptable buyer roles, target market, exclusions, proof required, and preferred outreach routes. Research sector vocabulary and buying process briefly before collecting names.
+1. Establish offer, acceptable buyer roles, target market, exclusions, proof required, and preferred outreach routes. Learn sector vocabulary and buying process briefly before collecting names.
 2. Map high-density discovery sources: relevant fairs, associations, registries, procurement portals, marketplaces, and directories. Capture source URLs and queries once. Then use targeted web and social search for gaps. Lists discover names; they do not prove purchasing fit.
 3. Normalize candidate names, domains, contacts, and exclusions with `scripts/normalize_candidates.py` when local Python is available. Maintain one company ledger with stable IDs and separate source observations. Reuse it across sessions and agents. Read [research.md](references/research.md).
 4. Verify identity/market, approved buying role, offer/use fit, and a sourced public business route. Assign `contact now`, `call first`, `held`, `excluded`, or `duplicate`. Use separate `explore` tier only when user accepts lower-confidence outreach. Do not force a positive decision to reach a count.
-5. Show a small reviewed sample and 1–3 draft styles when feedback could change targeting or voice. Draft only for qualified or seller-approved exploratory leads. Preserve any approved seller email structure. Read [outreach.md](references/outreach.md).
-6. Export lean contact views with company, route/link, relevant offer, one reason, message, and source ID. Keep detailed evidence and missing gates in ledger. Do not send messages unless user separately authorizes sending.
+5. Show a small reviewed sample and 1–3 draft styles only when feedback could change targeting or voice. Draft for qualified contacts and explicitly approved exploratory leads. Preserve approved sender email structure. Read [outreach.md](references/outreach.md).
+6. Deliver lean contact views with company, route/link, relevant offer, one reason, message, and source ID. Keep detailed evidence and missing gates in ledger. Do not send messages unless separately authorized.
 
 ## Efficiency
 
