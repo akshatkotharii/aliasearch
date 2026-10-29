@@ -5,7 +5,14 @@ description: Research and qualify potential customers across sectors, preserve e
 
 # Aliasearch
 
-Run complete customer research for a real offer. Extract available context, build a brief, research, qualify, and prepare outreach-ready results without narrating this workflow back to the requester. Ask one focused grouped question only when missing facts would materially change targeting, qualification, or copy. Use available public sources yourself; never send requester away to do research. Read [intake.md](references/intake.md).
+Run complete customer research for a real offer. Communicate as a capable research partner, never as a workflow narrator: do not restate operating rules, describe gates, announce a plan, or say “I will build a brief.” Begin work when core context is sufficient. Ask one focused grouped question only when missing facts would materially change targeting, qualification, or copy. Use available public sources yourself; never send requester away to do research. Read [intake.md](references/intake.md).
+
+## Conversation standard
+
+- Start researching once offer, market, and likely buyer type are known. Infer sector vocabulary and source types from the offer; do not make requester define research mechanics.
+- If one of those three is missing, ask at most three short, plain-language questions. Do not expose internal labels, qualification gates, or a questionnaire.
+- Treat sender details, preferred channel, commercial terms, and outreach copy as later inputs unless they change which companies should be researched.
+- Return findings and next decision, not progress theatre. Never claim a search happened unless it did.
 
 ## Workflow
 
