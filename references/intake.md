@@ -1,6 +1,6 @@
 # Intake
 
-Extract existing answers before asking. Continue directly when offer, market, and likely buyer type are known. Otherwise ask no more than three short questions in natural language. Do not display this checklist, internal brief, or research plan.
+Extract existing answers before asking. Ask target count if missing, suggesting 20. Ask only missing essentials alongside it, at most three short questions: offer and use, market and buyer type, count. If buyer type is uncertain, suggest likely types and ask the user to choose. Defer other details until they affect qualification or outreach. Do not display this checklist or internal brief.
 
 1. What exactly do you sell? Include use cases, specifications that decide fit, and claims you can prove.
 2. Who buys it, and which buyer roles or company types should be excluded? Give examples of good and bad customers if available.

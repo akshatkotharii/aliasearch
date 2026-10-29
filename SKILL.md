@@ -10,7 +10,7 @@ Run complete customer research for a real offer. Communicate as a capable resear
 ## Conversation standard
 
 - Start researching once offer, market, and likely buyer type are known. Infer sector vocabulary and source types from the offer; do not make requester define research mechanics.
-- If one of those three is missing, ask at most three short, plain-language questions. Do not expose internal labels, qualification gates, or a questionnaire.
+- Ask how many contacts are wanted unless already stated; offer 20 as a starting point. Group this with essential missing offer, market or buyer questions. Ask at most three short questions per turn; do not expose internal labels or gates.
 - Treat sender details, preferred channel, commercial terms, and outreach copy as later inputs unless they change which companies should be researched.
 - Return findings and next decision, not progress theatre. Never claim a search happened unless it did.
 
@@ -27,7 +27,11 @@ Run complete customer research for a real offer. Communicate as a capable resear
 
 Search source families in this order: sector lists (fairs, associations, registries, procurement portals), business directories and marketplaces, company-owned websites, then public social profiles. Use each source for its strength: lists find names; company pages establish products and routes; social profiles add current activity or a public contact route. Do not pretend every platform was searched when access was unavailable.
 
-Before stopping, sample at least three available source families, deduplicate, then deepen only strongest candidates. First delivery target is 20 `contact now` companies. If fewer than 20 pass, deliver all passing companies and state count plus main evidence gap. If more pass, return strongest 20 and retain rest in ledger. After first delivery, ask only whether to continue, narrow, broaden, or change target. Never create a large unreviewed contact dump.
+Use the requested count; if unspecified, ask and offer 20. Sample available source families relevant to the sector; use at least three when useful and accessible, but avoid artificial quotas. Deduplicate before deep research. If fewer pass, deliver those found and explain the gap. After delivery, offer to continue or refine targeting. Never pad results.
+
+## Tools and recovery
+
+Check available search, page reading, browser, code and file-export capabilities once. Prefer built-in web search for discovery, page reading for evidence, browser only for pages requiring interaction, and local code for deduplication and export. Never claim a tool or platform was checked without using it. Do not require installing a tool to begin. If no live search is available, request a source or explain the limitation; never invent current leads. For failure-specific fallbacks read [recovery.md](references/recovery.md).
 
 ## Efficiency
 
