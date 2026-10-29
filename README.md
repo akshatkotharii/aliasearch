@@ -7,6 +7,8 @@ Portable skill for customer discovery, qualification, and individual outreach dr
 Download repository ZIP from GitHub, extract it, then copy `aliasearch` folder into your agent's skills directory. Or clone repository and run:
 
 ```sh
+git clone https://github.com/akshatkotharii/aliasearch.git
+cd aliasearch
 ./install.sh --agent codex
 ./install.sh --agent claude
 ./install.sh --agent cursor
