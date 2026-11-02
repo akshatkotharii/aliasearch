@@ -40,6 +40,8 @@ Cache each URL and excerpt with date and source ID; dedupe before enrichment. Us
 
 When Python is available, use the bundled normalizer on candidate CSVs before enrichment; review its collision suggestions rather than treating them as verified duplicates. Run `python3 scripts/doctor.py` only when local capability checks are needed. It cannot verify the assistant's search tools or social login. Do not claim token savings without measurements.
 
+When evidence is already stored as JSONL objects with `company_id`, use `scripts/evidence_packet.py` to select complete records for the companies being reviewed. Pass the resulting packet rather than the whole ledger; retain source URLs and original records. This helper filters existing records only: it does not scrape, summarize, qualify leads, or validate evidence. If Python or a suitable ledger is unavailable, select the relevant evidence using the agent's available tools.
+
 Keep internal handoffs and progress updates concise: send IDs, decisions, decisive evidence, source links, unresolved gaps and next actions rather than full transcripts or repeated records. Store detailed observations once in the ledger; retrieve them when needed. Preserve negations, numbers, dates, qualifications, exact names and user constraints. Never compress evidence so far that another agent cannot verify a claim. Write outreach, exported deliverables and user explanations in clear natural language and in the requested voice; do not impose a compressed persona on them. No separate compression skill is required.
 
 Resume from existing brief and ledger. When user changes a boundary, version brief and reconsider only affected decisions. Do not repeat prior searches without a freshness reason.

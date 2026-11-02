@@ -92,6 +92,14 @@ python3 scripts/normalize_candidates.py candidates.csv --output normalized.csv -
 
 The helper suggests duplicate groups for review; it does not verify contacts or decide buyer fit. Your assistant can then review the shortlisted evidence and write drafts. Keep source files and results in your own workspace so later sessions can reuse them.
 
+If your evidence ledger is JSON Lines with a `company_id` field, select complete records for a review without loading the entire ledger into the assistant:
+
+```sh
+python3 scripts/evidence_packet.py evidence.jsonl --company-id C001 --company-id C002 > packet.jsonl
+```
+
+The helper preserves selected records and reports missing IDs; it does not fetch or verify sources. Actual token savings depend on the assistant and must be measured.
+
 For another compatible local agent, install into its skills folder:
 
 ```sh
