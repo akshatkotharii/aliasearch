@@ -12,6 +12,10 @@ Aliasearch is a portable customer-research skill for service businesses, manufac
 
 Most prospecting prompts return a pile of names. Aliasearch first follows the user's exact scope, exclusions, requested count, channels, and output. It asks for missing decision-changing context, then adds sector and sales-research judgment without silently replacing the request. It verifies companies and evidence before writing outreach.
 
+## Why use Aliasearch instead of a normal prompt?
+
+A capable assistant can do this work from a prompt. Aliasearch makes the process repeatable: it preserves the request, asks for missing context, maps suitable sources, deduplicates candidates, checks evidence, repairs tool failures before fallback, and reviews each draft. It is designed to reduce skipped steps and rework; whether it outperforms a strong prompt still needs evaluation. It does not make the assistant inherently smarter or unlock sources the current agent cannot access.
+
 ```text
 Brief → source map → candidate pool → deduplicate → evidence gates → concise outreach pack
 ```
@@ -19,6 +23,12 @@ Brief → source map → candidate pool → deduplicate → evidence gates → c
 Output stays practical: company, why it fits, public route, contact context, source link, and channel-specific draft. Research notes stay separate from user-facing delivery.
 
 Use the count the user requests. If they give none, ask and offer 20. Complete that target when evidence supports it; return fewer when fewer qualify. Use interim batches only when review can change targeting or copy. Never treat 20 as a cap or pad the list.
+
+## Scope and scale
+
+Works across B2B sectors and buyer types. Source routes can include trade fairs, exhibitor lists, associations, registries, directories, marketplaces, company sites, and public social profiles. Route choice follows the market and the user's requested platforms.
+
+There is no built-in contact cap. The requested count controls; a 20-contact suggestion applies only when no count is given. Large jobs can continue across batches or sessions when the agent can save and resume research records. Real limits are source coverage, platform access, available tools, time, and the current agent's context limits. “Search the whole internet” cannot be guaranteed; report what was and was not checked.
 
 ## Install
 
@@ -67,9 +77,11 @@ Drafts lead with a verified buyer-relevant signal, connect it to one offer angle
 
 ## What it needs
 
-- Your offer, target market, preferred buyer type, commercial limits, and exclusions.
-- Public web access through your agent for current company research.
-- Python 3 only if you want its optional local deduplication helper. No paid API or package required.
+- Start with offer/use, likely buyer, market, requested count, exclusions, fit rules, and desired output. You do not need to know research sources or sector vocabulary.
+- Add commercial limits and examples of good/bad customers when they affect qualification.
+- For personalized drafts, provide approved sender identity, proof/claims, reply goal, preferred channel, and any copy structure to preserve. Aliasearch asks for missing decision-changing context; unknowns are not silently invented.
+- The agent needs public web search for current research. Logged-in social pages work only when that agent already has authorized access. The skill does not grant accounts, credentials, or paid data access.
+- Python 3 is optional for local deduplication. No paid API or required package.
 
 ## Boundaries
 
