@@ -21,7 +21,7 @@ install_one() {
   cp "$root_dir/SKILL.md" "$target/SKILL.md"
   mkdir -p "$target/references" "$target/scripts"
   cp "$root_dir"/references/*.md "$target/references/"
-  cp "$root_dir/scripts/normalize_candidates.py" "$target/scripts/"
+  cp "$root_dir"/scripts/*.py "$target/scripts/"
   printf 'Installed %s\n' "$target"
 }
 if [ -n "$install_path" ]; then

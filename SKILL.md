@@ -38,4 +38,6 @@ Check available search, page reading, browser, code and file-export capabilities
 
 Cache each URL and excerpt with date and source ID; dedupe before enrichment. Use code for parsing, normalization, completeness checks, counts, and export. Give AI only compact evidence packets for ambiguous fit and personalized writing. Track unique qualified firms, duplicates, usable routes, time, and tokens by source family; stop low-yield routes. Give parallel agents disjoint source slices and one shared ledger. Never require a GPU, paid API, or a particular research extension. Record access gaps accurately.
 
+When Python is available, use the bundled normalizer on candidate CSVs before enrichment; review its collision suggestions rather than treating them as verified duplicates. Run `python3 scripts/doctor.py` only when local capability checks are needed. It cannot verify the assistant's search tools or social login. Do not claim token savings without measurements.
+
 Resume from existing brief and ledger. When user changes a boundary, version brief and reconsider only affected decisions. Do not repeat prior searches without a freshness reason.

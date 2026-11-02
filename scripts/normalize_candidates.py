@@ -26,6 +26,9 @@ ALIASES = {
     "country": ("country", "market"),
 }
 
+PUBLIC_EMAIL_DOMAINS = {"gmail.com", "googlemail.com", "yahoo.com", "outlook.com", "hotmail.com", "icloud.com", "aol.com", "proton.me", "protonmail.com"}
+SHARED_PROFILE_DOMAINS = {"instagram.com", "facebook.com", "linkedin.com", "youtube.com", "tiktok.com", "x.com", "twitter.com", "linktr.ee", "wa.me"}
+
 
 def first(row: dict[str, str], names: tuple[str, ...]) -> str:
     for name in names:
@@ -101,9 +104,13 @@ def main() -> None:
         city = first(row, ALIASES["city"])
         country = first(row, ALIASES["country"])
         normal_company = text_key(company)
-        normal_domain = domain(website) or domain(raw_email)
+        email_domain = domain(raw_email) if email(raw_email) else ""
+        website_domain = domain(website)
+        if any(website_domain == shared or website_domain.endswith("." + shared) for shared in SHARED_PROFILE_DOMAINS):
+            website_domain = ""
+        normal_domain = website_domain or (email_domain if email_domain not in PUBLIC_EMAIL_DOMAINS else "")
         key = f"domain:{normal_domain}" if normal_domain else (
-            f"name:{normal_company}|city:{text_key(city)}|market:{text_key(country)}"
+            f"name:{normal_company}|city:{text_key(city)}|market:{text_key(country)}" if normal_company else f"unidentified:{index}"
         )
         exclusion_match = normal_company in exclusions or normal_domain in exclusions
         value = dict(row)

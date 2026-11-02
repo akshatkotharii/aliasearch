@@ -82,6 +82,16 @@ cd aliasearch
 
 Restart the agent after installation. Use `/aliasearch` in Claude Code, or invoke the skill through the command your agent supports.
 
+For local CSV deduplication, Python 3.10 or newer is needed; no Python packages are required. Run `python3 scripts/doctor.py` to check local commands. Web search and social access depend on your assistant and cannot be established by this script. The core skill can still be used without Python.
+
+To process an existing candidate file locally:
+
+```sh
+python3 scripts/normalize_candidates.py candidates.csv --output normalized.csv --collisions review.csv
+```
+
+The helper suggests duplicate groups for review; it does not verify contacts or decide buyer fit. Your assistant can then review the shortlisted evidence and write drafts. Keep source files and results in your own workspace so later sessions can reuse them.
+
 For another compatible local agent, install into its skills folder:
 
 ```sh

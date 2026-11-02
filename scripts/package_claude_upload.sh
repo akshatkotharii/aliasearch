@@ -9,7 +9,8 @@ trap 'rm -rf "$stage_dir"' EXIT
 mkdir -p "$stage_dir/aliasearch/references" "$stage_dir/aliasearch/scripts" "$out_dir"
 cp "$root_dir/SKILL.md" "$stage_dir/aliasearch/"
 cp "$root_dir"/references/*.md "$stage_dir/aliasearch/references/"
-cp "$root_dir/scripts/normalize_candidates.py" "$stage_dir/aliasearch/scripts/"
+cp "$root_dir"/scripts/*.py "$stage_dir/aliasearch/scripts/"
 
-(cd "$stage_dir" && zip -qr "$out_dir/aliasearch-claude.zip" aliasearch)
+(cd "$stage_dir" && zip -qr "$stage_dir/aliasearch-claude.zip" aliasearch)
+cp "$stage_dir/aliasearch-claude.zip" "$out_dir/aliasearch-claude.zip"
 printf '%s\n' "Built $out_dir/aliasearch-claude.zip"
