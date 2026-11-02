@@ -2,6 +2,10 @@
 
 Read the full prompt, prior answers, attachments, and available business materials before asking anything. User instructions outrank workflow defaults. Expertise should improve execution, never silently change the requested job.
 
+If the user provides a website or catalogue, read relevant offer, use-case, geography and customer pages first. Extract only supported facts with source links; ask the user about material gaps or contradictions. A website is optional: a plain-language description works. Never treat marketing claims, competitor pages or illustrative examples as verified purchasing requirements.
+
+When buyer segments are genuinely unspecified, propose a small set of plausible segments with a reason and the evidence needed to qualify each. Label these as hypotheses, not customers or numerical probabilities. Preserve any segments the user already specified; ask before narrowing or replacing them. Use the user's examples and exclusions to refine the search.
+
 ## Request contract
 
 Track these internally. Mark each `specified`, `missing`, or `conflicting`:

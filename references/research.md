@@ -8,6 +8,10 @@ Use the requested count; suggest 20 if none was given. Select source layers appr
 
 Canonical records: company ID and aliases; source ID, URL and checked date; one observation per claim with source ID; public contact and source ID; decision with missing gate; draft with source ID. Keep raw excerpts out of contact export.
 
+After a company passes fit checks, search for a relevant purchasing or decision-making role when the user needs a person. Record the person's role, source, date, and whether the contact route is directly published for that person or is a shared company inbox. Do not infer that a founder is the buyer or manufacture an email address. If no named person is verified, use a sourced business route or hold the lead according to the brief.
+
+Track discovery yield by source and segment: candidates found, unique firms, qualified firms and usable contact routes. Compare these counts before spending more effort; retain requested sources even when yield is low. A source listing or model score is a discovery signal, not proof of buyer fit or current intent.
+
 Four contact-now gates: identity/target market, acceptable buying role, specific offer/use match, public business route. Label fit exact, family, or needs confirmation. A directory/fair listing alone never passes all gates. `Explore` requires identity, route, plausible relevance, and explicit approval for lower-confidence outreach; keep separate. Missing evidence is held, not guessed. Clear mismatch, existing customer, and duplicate are excluded.
 
 For each candidate send AI only decisive excerpts, offer constraints, contact candidates, and source IDs. Reject a positive decision whose citation does not exist. Revisit only when source, brief, or a missing gate changes. Parallel agents own disjoint query slices and append through one import queue.
