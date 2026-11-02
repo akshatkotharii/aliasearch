@@ -1,97 +1,120 @@
 # Aliasearch
 
 <p align="center">
-  <img src="assets/aliasearch-hero.png" alt="Aliasearch turns scattered company leads into a verified outreach route" width="900">
+  <img src="assets/aliasearch-hero.png" alt="Scattered leads become a focused, verified outreach path" width="900">
 </p>
 
-<p align="center"><strong>Find fewer wrong customers. Reach right ones with context.</strong></p>
+<p align="center"><strong>Find the right buyers. Know why they fit. Start the conversation well.</strong></p>
 
-Aliasearch is a portable customer-research skill for service businesses, manufacturers, agencies, consultants, and B2B teams. It turns a vague “find customers” request into an evidence-backed, deduplicated list with only useful fields and individual outreach drafts. It never sends messages.
+<p align="center">A portable customer-research skill for Claude, Codex, Cursor, and compatible agents.</p>
 
-## Why this is different
+<p align="center">
+  <a href="#quick-start">Quick start</a> ·
+  <a href="#how-it-works">How it works</a> ·
+  <a href="#what-you-get">What you get</a> ·
+  <a href="#limits">Limits</a>
+</p>
 
-Most prospecting prompts return a pile of names. Aliasearch first follows the user's exact scope, exclusions, requested count, channels, and output. It asks for missing decision-changing context, then adds sector and sales-research judgment without silently replacing the request. It verifies companies and evidence before writing outreach.
+Aliasearch helps B2B teams turn “find me customers” into a clear brief, focused research, evidence-based qualification, and useful individual outreach drafts. It works across products, services, and markets. **It prepares the work; it never sends messages.**
 
-## Why use Aliasearch instead of a normal prompt?
+## Why use it?
 
-A capable assistant can do this work from a prompt. Aliasearch makes the process repeatable: it preserves the request, asks for missing context, maps suitable sources, deduplicates candidates, checks evidence, repairs tool failures before fallback, and reviews each draft. It is designed to reduce skipped steps and rework; whether it outperforms a strong prompt still needs evaluation. It does not make the assistant inherently smarter or unlock sources the current agent cannot access.
+A capable assistant can do prospect research from a prompt. Aliasearch packages the work into a repeatable path: preserve the user's request, ask for context that changes the answer, choose sources for the market, deduplicate before deep research, check buyer fit, recover when a tool fails, and tailor each draft to its evidence.
 
-```text
-Brief → source map → candidate pool → deduplicate → evidence gates → concise outreach pack
+| Research | Qualification | Outreach |
+| --- | --- | --- |
+| Map the market and its best company sources | Check who the company is, what it buys, and why the offer fits | Prepare a relevant contact route and a distinct draft for each approved lead |
+
+It is designed to reduce skipped steps and rework. It does not make an agent inherently smarter or give it access to sources it cannot already reach.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A["Brief<br/>Offer · buyer · market"] --> B["Source map<br/>Lists · fairs · sites · social"]
+    B --> C["Buyer audit<br/>Identity · fit · contact route"]
+    C --> D["Outreach pack<br/>Evidence · tailored draft"]
+    classDef step fill:#0b1b31,stroke:#19a9e5,color:#ffffff,stroke-width:2px;
+    classDef result fill:#162b1f,stroke:#b9e532,color:#ffffff,stroke-width:2px;
+    class A,B,C step;
+    class D result;
 ```
 
-Output stays practical: company, why it fits, public route, contact context, source link, and channel-specific draft. Research notes stay separate from user-facing delivery.
+1. **Clarify the brief.** Carry forward the user's scope, count, market, exclusions, channels, and output. Ask about missing details that could change the result.
+2. **Map and search sources.** Start with high-density sector sources such as fairs, associations, registries, directories, and marketplaces, then fill gaps with company websites and public social profiles.
+3. **Audit candidates.** Normalize and deduplicate records; check company identity, market, buyer role, offer fit, and a public business contact route.
+4. **Prepare the next action.** Return qualified leads with evidence links and a tailored draft for each approved contact. Keep uncertain and excluded records out of the priority list.
 
-Use the count the user requests. If they give none, ask and offer 20. Complete that target when evidence supports it; return fewer when fewer qualify. Use interim batches only when review can change targeting or copy. Never treat 20 as a cap or pad the list.
+## What you get
 
-## Scope and scale
+A concise, usable contact view—usually company, location, contact route, why it fits, source link, and a channel-specific message. More detailed research stays in a separate ledger when the job needs it. The format can be a spreadsheet, a compact list, or another requested deliverable supported by the agent.
 
-Works across B2B sectors and buyer types. Source routes can include trade fairs, exhibitor lists, associations, registries, directories, marketplaces, company sites, and public social profiles. Route choice follows the market and the user's requested platforms.
+The requested count is the target. If no count is given, Aliasearch asks and may suggest 20. It returns fewer when fewer prospects pass the fit checks; it never pads a list to hit a number.
 
-There is no built-in contact cap. The requested count controls; a 20-contact suggestion applies only when no count is given. Large jobs can continue across batches or sessions when the agent can save and resume research records. Real limits are source coverage, platform access, available tools, time, and the current agent's context limits. “Search the whole internet” cannot be guaranteed; report what was and was not checked.
+## Quick start
 
-## Install
+Choose the path that matches your agent.
 
-### Claude web / Claude desktop
+### Claude web or desktop
 
-This is different from Claude Code. Claude web/desktop cannot read `~/.claude/skills/` on your computer.
+1. Download [`dist/aliasearch-claude.zip`](dist/aliasearch-claude.zip).
+2. In Claude, open **Settings → Customize → Skills** and upload the ZIP.
+3. Enable **Aliasearch**, start a fresh chat, and describe the buyers you want to find.
 
-1. Download [`dist/aliasearch-claude.zip`](dist/aliasearch-claude.zip) from this repository.
-2. In Claude, open **Settings → Customize → Skills**.
-3. Turn on **Code execution and file creation** if Claude asks.
-4. Upload the ZIP, enable **Aliasearch**, start a fresh chat, then ask: `Use Aliasearch to find buyers for my offer.`
+If **Skills** is not available, custom Skills may not be enabled for your account or workspace.
 
-If **Skills** is missing, your Claude plan or workspace administrator may not have enabled custom Skills.
-
-### Claude Code, Codex, Cursor, or another local agent
+### Claude Code, Codex, or Cursor
 
 ```sh
 git clone https://github.com/akshatkotharii/aliasearch.git
 cd aliasearch
 
-./install.sh --agent codex
-./install.sh --agent claude
-./install.sh --agent cursor
-./install.sh --agent all
-
-# Or install into any compatible skill directory
-./install.sh --path /your-agent/skills/aliasearch
+./install.sh --agent codex   # or: claude, cursor, all
 ```
 
-Run `./install.sh --list` to see supported local targets. Restart your agent after installation. In Claude Code, use `/aliasearch`; in other agents, use their skill command or ask them to use the `aliasearch` skill.
+Restart the agent after installation. Use `/aliasearch` in Claude Code, or invoke the skill through the command your agent supports.
 
-## What happens in a run
+For another compatible local agent, install into its skills folder:
 
-1. **Follow the brief** — carries forward supplied details and asks all missing questions that could change fit, targeting, channels, or output; no arbitrary question cap.
-2. **Map market** — learns sector vocabulary and high-density company sources before broad searching.
-3. **Research efficiently** — uses directories, exhibitors, associations, marketplaces, websites, and public social profiles in that order of evidence density.
-4. **Check every candidate** — confirms identity, market, buyer role, offer fit, and a public route before it becomes a priority contact.
-5. **Repair failures** — diagnoses and fixes the chosen tool route before using a weaker fallback, then verifies the original capability with a real read-only action.
-6. **Prepare next action** — produces a lean list plus a distinct, human outreach draft for each approved contact.
+```sh
+./install.sh --path /your-agent/skills/aliasearch
+./install.sh --list
+```
 
-Drafts lead with a verified buyer-relevant signal, connect it to one offer angle, and end with one low-friction reply ask. They preserve user-approved copy structure, avoid name-swapped templates, and never promise a reply rate or inbox placement.
+## Give it a useful brief
 
-## Example prompt
+Start with the facts that change who qualifies:
 
-> Use Aliasearch to find 40 wholesale buyers in Indonesia for my cotton and poly-viscose shirting fabrics. Exclude existing customers I will provide. Prioritize companies with public product evidence and an email route. Give me a concise spreadsheet-ready list and individual email drafts, but do not send anything.
+- **Offer:** what you sell and its main uses
+- **Buyer:** the kind of customer, role, or purchasing channel
+- **Market and count:** where to search and how many you want
+- **Fit and exclusions:** useful buying signals, poor-fit cases, and names to omit
+- **Output:** contact fields, evidence links, and whether you need email, call, or social drafts
 
-## What it needs
+You do not need to know the sector vocabulary or research sources. Add sender details, approved claims, preferred tone, and the reply you want when asking for outreach drafts.
 
-- Start with offer/use, likely buyer, market, requested count, exclusions, fit rules, and desired output. You do not need to know research sources or sector vocabulary.
-- Add commercial limits and examples of good/bad customers when they affect qualification.
-- For personalized drafts, provide approved sender identity, proof/claims, reply goal, preferred channel, and any copy structure to preserve. Aliasearch asks for missing decision-changing context; unknowns are not silently invented.
-- The agent needs public web search for current research. Logged-in social pages work only when that agent already has authorized access. The skill does not grant accounts, credentials, or paid data access.
-- Python 3 is optional for local deduplication. No paid API or required package.
-
-## Boundaries
-
-Aliasearch is self-contained: its research, qualification, recovery, and outreach rules ship in this repository. It does not depend on another skill. It remains an instruction set plus a local normalizer, not a hosted database, bulk sender, or guaranteed source of current buying intent. Coverage depends on public sources and permissions available to your agent. Verify material commercial claims before outreach.
-
-## Repository structure
+### Prompt starter
 
 ```text
-SKILL.md                         Core workflow
-references/                      Intake, research, and outreach rules
-scripts/normalize_candidates.py  Deterministic deduplication helper
-dist/aliasearch-claude.zip       Upload-ready Claude web/desktop package
+Use Aliasearch to find [count] [buyer type] in [market] for [offer].
+A strong fit is [buying/use signals]. Exclude [names or categories].
+Return [format] with the best public contact route, evidence links,
+why each company fits, and an individual [email/message] draft.
 ```
+
+## Limits
+
+- There is no built-in contact cap. Coverage depends on source availability, the agent's tools and access, time, and its ability to save and resume larger jobs. A whole-internet search cannot be guaranteed; checked and unavailable sources should be reported accurately.
+- Public social pages can enrich research. Logged-in pages are usable only when the agent already has authorized access; Aliasearch does not provide logins or bypass access controls.
+- The skill does not send messages, guarantee replies, or promise inbox placement.
+- No Aliasearch API or paid package is required. Web search comes from the agent or platform being used and may have its own access limits or costs.
+- Python 3 is optional for the local deduplication helper.
+
+## In the repository
+
+| Path | Purpose |
+| --- | --- |
+| [`SKILL.md`](SKILL.md) | Main workflow and agent instructions |
+| [`references/`](references/) | Intake, research, recovery, and outreach guidance |
+| [`scripts/normalize_candidates.py`](scripts/normalize_candidates.py) | Optional local deduplication helper |
+| [`dist/aliasearch-claude.zip`](dist/aliasearch-claude.zip) | Upload package for Claude web and desktop |
