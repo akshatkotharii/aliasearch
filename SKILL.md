@@ -31,7 +31,7 @@ Use the requested count; if unspecified, ask and offer 20. Sample available sour
 
 ## Tools and recovery
 
-Check available search, page reading, browser, code and file-export capabilities once. Prefer built-in web search for discovery, page reading for evidence, browser only for pages requiring interaction, and local code for deduplication and export. Never claim a tool or platform was checked without using it. Do not require installing a tool to begin. If no live search is available, request a source or explain the limitation; never invent current leads. For failure-specific fallbacks read [recovery.md](references/recovery.md).
+Check available search, page reading, browser, code and file-export capabilities once. Prefer built-in web search for discovery, page reading for evidence, browser only for pages requiring interaction, and local code for deduplication and export. Never claim a tool or platform was checked without using it. Do not require installing a tool to begin. If a selected tool fails, diagnose, repair and verify that same route before substituting another route; silent fallback can hide missing coverage. Read [recovery.md](references/recovery.md) for the bounded self-repair loop. If no live search is available, request a source or explain the limitation; never invent current leads.
 
 ## Efficiency
 

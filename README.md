@@ -56,7 +56,8 @@ Run `./install.sh --list` to see supported local targets. Restart your agent aft
 2. **Map market** — learns sector vocabulary and high-density company sources before broad searching.
 3. **Research efficiently** — uses directories, exhibitors, associations, marketplaces, websites, and public social profiles in that order of evidence density.
 4. **Check every candidate** — confirms identity, market, buyer role, offer fit, and a public route before it becomes a priority contact.
-5. **Prepare next action** — produces a lean list plus a distinct, human outreach draft for each approved contact.
+5. **Repair failures** — diagnoses and fixes the chosen tool route before using a weaker fallback, then verifies the original capability with a real read-only action.
+6. **Prepare next action** — produces a lean list plus a distinct, human outreach draft for each approved contact.
 
 ## Example prompt
 
@@ -70,7 +71,7 @@ Run `./install.sh --list` to see supported local targets. Restart your agent aft
 
 ## Boundaries
 
-Aliasearch is an instruction set plus a local normalizer, not a hosted database, bulk sender, or guaranteed source of current buying intent. Coverage depends on the public sources and permissions available to your agent. Verify material commercial claims before outreach.
+Aliasearch is self-contained: its research, qualification, recovery, and outreach rules ship in this repository. It does not depend on another skill. It remains an instruction set plus a local normalizer, not a hosted database, bulk sender, or guaranteed source of current buying intent. Coverage depends on public sources and permissions available to your agent. Verify material commercial claims before outreach.
 
 ## Repository structure
 
