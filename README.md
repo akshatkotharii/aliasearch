@@ -18,7 +18,7 @@ Brief → source map → candidate pool → deduplicate → evidence gates → c
 
 Output stays practical: company, why it fits, public route, contact context, source link, and channel-specific draft. Research notes stay separate from user-facing delivery.
 
-First batch is up to 20 strong contacts. It samples multiple source types before ranking, never pads results with weak names, then asks whether to continue, broaden, narrow, or change direction.
+Use the count the user requests. If they give none, ask and offer 20. Complete that target when evidence supports it; return fewer when fewer qualify. Use interim batches only when review can change targeting or copy. Never treat 20 as a cap or pad the list.
 
 ## Install
 
@@ -58,6 +58,8 @@ Run `./install.sh --list` to see supported local targets. Restart your agent aft
 4. **Check every candidate** — confirms identity, market, buyer role, offer fit, and a public route before it becomes a priority contact.
 5. **Repair failures** — diagnoses and fixes the chosen tool route before using a weaker fallback, then verifies the original capability with a real read-only action.
 6. **Prepare next action** — produces a lean list plus a distinct, human outreach draft for each approved contact.
+
+Drafts lead with a verified buyer-relevant signal, connect it to one offer angle, and end with one low-friction reply ask. They preserve user-approved copy structure, avoid name-swapped templates, and never promise a reply rate or inbox placement.
 
 ## Example prompt
 
