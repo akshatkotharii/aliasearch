@@ -28,76 +28,78 @@
   <!-- 01: Discovery -->
   <circle cx="78" cy="174" r="16" fill="#4F7184"/>
   <text x="78" y="179" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">01</text>
-  <text x="106" y="180" class="ink" font-size="22" font-weight="650">Find companies across sources</text>
+  <text x="106" y="180" class="ink" font-size="24" font-weight="650">Find companies</text>
 
   <rect x="64" y="210" width="164" height="112" class="card"/>
   <path d="M82 253h36v29H82zM78 253l22-16 22 16M90 262v20M110 262v20" class="line"/>
-  <text x="80" y="304" class="ink" font-size="19" font-weight="600">Exhibitions</text>
+  <text x="80" y="304" class="ink" font-size="21" font-weight="600">Exhibitions</text>
 
   <rect x="244" y="210" width="164" height="112" class="card"/>
   <path d="M263 237h28v39h-28zM269 246h16M269 253h16M269 260h11M269 268h14" class="line"/>
-  <text x="261" y="304" class="ink" font-size="19" font-weight="600">Directories</text>
+  <text x="261" y="304" class="ink" font-size="21" font-weight="600">Directories</text>
 
   <rect x="64" y="338" width="164" height="112" class="card"/>
   <rect x="81" y="361" width="39" height="27" rx="2" class="line"/>
   <path d="M82 368h37M87 377h12M104 377h10M87 383h26" class="line"/>
-  <text x="80" y="432" class="ink" font-size="19" font-weight="600">Company sites</text>
+  <text x="80" y="432" class="ink" font-size="21" font-weight="600">Company sites</text>
 
   <rect x="244" y="338" width="164" height="112" class="card"/>
   <circle cx="280" cy="375" r="13" fill="#DCE6E8"/>
   <circle cx="280" cy="371" r="4" fill="#4F7184"/>
   <path d="M272 382c2-7 14-7 16 0M301 366h27M301 375h31M301 384h22" class="line"/>
-  <text x="261" y="432" class="ink" font-size="19" font-weight="600">Public social</text>
+  <text x="261" y="432" class="ink" font-size="21" font-weight="600">Public social</text>
 
   <!-- 02: Evidence and deduplication -->
   <circle cx="473" cy="174" r="16" fill="#4F7184"/>
   <text x="473" y="179" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">02</text>
-  <text x="501" y="180" class="ink" font-size="22" font-weight="650">Deduplicate and save evidence</text>
+  <text x="501" y="180" class="ink" font-size="22" font-weight="650">Deduplicate + save evidence</text>
 
   <rect x="458" y="229" width="146" height="63" class="card"/>
   <circle cx="478" cy="250" r="8" fill="#DCE6E8"/>
-  <text x="494" y="253" class="ink" font-size="15" font-weight="600">Company record</text>
-  <text x="475" y="275" class="muted" font-size="14">Website · list</text>
+  <text x="494" y="253" class="ink" font-size="17" font-weight="600">Candidate A</text>
   <rect x="458" y="323" width="146" height="63" class="card"/>
   <circle cx="478" cy="344" r="8" fill="#EEDFD7"/>
-  <text x="494" y="347" class="ink" font-size="15" font-weight="600">Same company</text>
-  <text x="475" y="369" class="muted" font-size="14">Fair · social</text>
+  <text x="494" y="347" class="ink" font-size="17" font-weight="600">Candidate B</text>
   <path d="M604 260h20v63h17M604 354h20v-31M641 323h17" class="line" marker-end="url(#arrow)"/>
 
   <rect x="662" y="257" width="140" height="132" fill="#FFFFFF" stroke="#BFCBC7" stroke-width="1.5"/>
   <rect x="662" y="257" width="140" height="9" fill="#4F7184"/>
-  <text x="678" y="291" class="ink" font-size="16" font-weight="650">One clean record</text>
+  <text x="678" y="291" class="ink" font-size="17" font-weight="650">One company</text>
   <path d="M678 307h102M678 323h74M678 347h10M696 347h82M678 365h10M696 365h82" class="line"/>
   <circle cx="683" cy="306" r="3" fill="#B86D50"/>
   <circle cx="683" cy="322" r="3" fill="#B86D50"/>
-  <text x="458" y="425" class="muted" font-size="16">Keep source links with the company</text>
+  <text x="458" y="425" class="muted" font-size="16">Evidence stays linked</text>
 
   <!-- 03: Fit review -->
   <circle cx="868" cy="174" r="16" fill="#4F7184"/>
   <text x="868" y="179" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">03</text>
-  <text x="896" y="180" class="ink" font-size="22" font-weight="650">Check evidence of fit</text>
-  <text x="852" y="222" class="muted" font-size="16">Review each company against the brief</text>
+  <text x="896" y="180" class="ink" font-size="24" font-weight="650">Verify buyer fit</text>
 
-  <rect x="852" y="244" width="340" height="46" class="card"/>
-  <circle cx="878" cy="267" r="10" fill="#DCE6E8"/>
-  <path d="M873 267l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="272" class="ink" font-size="18">Buyer type and role</text>
+  <rect x="852" y="232" width="340" height="43" class="card"/>
+  <circle cx="878" cy="253" r="10" fill="#DCE6E8"/>
+  <path d="M873 253l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="901" y="259" class="ink" font-size="18">Buyer role</text>
 
-  <rect x="852" y="301" width="340" height="46" class="card"/>
-  <circle cx="878" cy="324" r="10" fill="#DCE6E8"/>
-  <path d="M873 324l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="329" class="ink" font-size="18">Product and use match</text>
+  <rect x="852" y="282" width="340" height="43" class="card"/>
+  <circle cx="878" cy="303" r="10" fill="#DCE6E8"/>
+  <path d="M873 303l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="901" y="309" class="ink" font-size="18">Offer fit</text>
 
-  <rect x="852" y="358" width="340" height="46" class="card"/>
-  <circle cx="878" cy="381" r="10" fill="#DCE6E8"/>
-  <path d="M873 381l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="386" class="ink" font-size="18">Market and contact route</text>
-  <text x="852" y="434" class="rust" font-size="16" font-weight="600">No padding to reach a target count</text>
+  <rect x="852" y="332" width="340" height="43" class="card"/>
+  <circle cx="878" cy="353" r="10" fill="#DCE6E8"/>
+  <path d="M873 353l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="901" y="359" class="ink" font-size="18">Market match</text>
+
+  <rect x="852" y="382" width="340" height="43" class="card"/>
+  <circle cx="878" cy="403" r="10" fill="#DCE6E8"/>
+  <path d="M873 403l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="901" y="409" class="ink" font-size="18">Public contact route</text>
+  <text x="852" y="455" class="rust" font-size="16" font-weight="600">No padding to hit a target count</text>
 
   <!-- 04: Personalized draft -->
   <circle cx="1263" cy="174" r="16" fill="#4F7184"/>
   <text x="1263" y="179" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">04</text>
-  <text x="1291" y="180" class="ink" font-size="22" font-weight="650">Prepare tailored outreach</text>
+  <text x="1291" y="180" class="ink" font-size="22" font-weight="650">Tailor first message</text>
 
   <rect x="1247" y="210" width="289" height="240" fill="#FFFFFF" stroke="#D9DEDA" stroke-width="1.5"/>
   <rect x="1247" y="210" width="289" height="38" fill="#E8EEF0"/>
