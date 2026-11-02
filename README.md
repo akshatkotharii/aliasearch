@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/aliasearch-hero.png" alt="Scattered leads become a focused, verified outreach path" width="760">
+  <img src="assets/aliasearch-workflow.svg" alt="Aliasearch finds companies across exhibitions, directories, websites and social profiles, checks fit, deduplicates records and prepares a personalized draft" width="900">
 </p>
 
 Aliasearch helps B2B teams turn “find me customers” into a clear brief, focused research, evidence-based qualification, and useful individual outreach drafts. It works across products, services, and markets. **It prepares the work; it never sends messages.**
@@ -27,18 +27,9 @@ A capable assistant can do prospect research from a prompt. Aliasearch packages 
 | --- | --- | --- |
 | Map the market and its best company sources | Check who the company is, what it buys, and why the offer fits | Prepare a relevant contact route and a distinct draft for each approved lead |
 
-It is designed to reduce skipped steps and rework. It does not make an agent inherently smarter or give it access to sources it cannot already reach.
+The skill makes the process repeatable; it does not make an agent inherently smarter or grant access to sources it cannot already reach.
 
 ## How it works
-
-```mermaid
-flowchart LR
-    A["Brief"] --> B["Map sources"] --> C["Verify fit"] --> D["Draft outreach"]
-    classDef step fill:#0b1b31,stroke:#19a9e5,color:#ffffff,stroke-width:2px;
-    classDef result fill:#162b1f,stroke:#b9e532,color:#ffffff,stroke-width:2px;
-    class A,B,C step;
-    class D result;
-```
 
 1. **Clarify the brief.** Carry forward the user's scope, count, market, exclusions, channels, and output. Ask about missing details that could change the result.
 2. **Map and search sources.** Start with high-density sector sources such as fairs, associations, registries, directories, and marketplaces, then fill gaps with company websites and public social profiles.
@@ -117,4 +108,5 @@ why each company fits, and an individual [email/message] draft.
 | [`SKILL.md`](SKILL.md) | Main workflow and agent instructions |
 | [`references/`](references/) | Intake, research, recovery, and outreach guidance |
 | [`scripts/normalize_candidates.py`](scripts/normalize_candidates.py) | Optional local deduplication helper |
+| [`assets/aliasearch-workflow.svg`](assets/aliasearch-workflow.svg) | README workflow illustration |
 | [`dist/aliasearch-claude.zip`](dist/aliasearch-claude.zip) | Upload package for Claude web and desktop |
