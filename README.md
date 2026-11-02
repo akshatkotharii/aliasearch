@@ -10,7 +10,7 @@ Aliasearch is a portable customer-research skill for service businesses, manufac
 
 ## Why this is different
 
-Most prospecting prompts return a pile of names. Aliasearch first learns offer, buyer, market, exclusions, and proof needed. Then it finds high-density sources, verifies each company, keeps weak-but-plausible social leads separate, and writes outreach only after fit is clear.
+Most prospecting prompts return a pile of names. Aliasearch first follows the user's exact scope, exclusions, requested count, channels, and output. It asks for missing decision-changing context, then adds sector and sales-research judgment without silently replacing the request. It verifies companies and evidence before writing outreach.
 
 ```text
 Brief → source map → candidate pool → deduplicate → evidence gates → concise outreach pack
@@ -52,7 +52,7 @@ Run `./install.sh --list` to see supported local targets. Restart your agent aft
 
 ## What happens in a run
 
-1. **Get real context** — asks only questions that change fit, targeting, or copy.
+1. **Follow the brief** — carries forward supplied details and asks all missing questions that could change fit, targeting, channels, or output; no arbitrary question cap.
 2. **Map market** — learns sector vocabulary and high-density company sources before broad searching.
 3. **Research efficiently** — uses directories, exhibitors, associations, marketplaces, websites, and public social profiles in that order of evidence density.
 4. **Check every candidate** — confirms identity, market, buyer role, offer fit, and a public route before it becomes a priority contact.

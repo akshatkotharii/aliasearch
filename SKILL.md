@@ -5,18 +5,19 @@ description: Research and qualify potential customers across sectors, preserve e
 
 # Aliasearch
 
-Run complete customer research for a real offer. Communicate as a capable research partner, never as a workflow narrator: do not restate operating rules, describe gates, announce a plan, or say “I will build a brief.” Begin work when core context is sufficient. Ask one focused grouped question only when missing facts would materially change targeting, qualification, or copy. Use available public sources yourself; never send requester away to do research. Read [intake.md](references/intake.md).
+Run complete customer research for a real offer. Treat user's explicit request as contract: preserve requested goal, count, scope, location, channels, exclusions, output, and copy constraints. Add research and sales judgment to improve result; never silently replace requested work with your preferred workflow or a smaller deliverable. When instructions conflict or material context is missing, ask before dependent decisions. Communicate as a capable research partner, not a workflow narrator. Use available public sources yourself; never send requester away to do research. Read [intake.md](references/intake.md).
 
 ## Conversation standard
 
-- Start researching once offer, market, and likely buyer type are known. Infer sector vocabulary and source types from the offer; do not make requester define research mechanics.
-- Ask how many contacts are wanted unless already stated; offer 20 as a starting point. Group this with essential missing offer, market or buyer questions. Ask at most three short questions per turn; do not expose internal labels or gates.
-- Treat sender details, preferred channel, commercial terms, and outreach copy as later inputs unless they change which companies should be researched.
+- Parse the full prompt and prior answers before acting. Carry forward supplied products, examples, exclusions, counts, formats, channels, and copy constraints; never ask for them again.
+- Ask for every missing fact that could change targeting, qualification, research depth, contact route, or requested output. No fixed question cap. Group concise, decision-linked questions in one turn; omit irrelevant or web-researchable facts. Split into stages only when later questions depend on sector findings.
+- Ask target count if absent; suggest 20, never impose it. If user states count, finish that scope or report honest shortfall; do not stop at an unsolicited sample.
+- Treat sender details, commercial terms, proof claims, reply goal, and outreach copy as required when they affect the requested draft. Defer only when they do not affect current research.
 - Return findings and next decision, not progress theatre. Never claim a search happened unless it did.
 
 ## Workflow
 
-1. Establish offer, acceptable buyer roles, target market, exclusions, proof required, and preferred outreach routes. Learn sector vocabulary and buying process briefly before collecting names.
+1. Build an internal request contract from explicit instructions and prior answers. Separate specified, missing, and conflicting details. Ask all material missing questions before decisions that depend on them. Learn sector vocabulary and buying process without changing the user's target.
 2. Map high-density discovery sources: relevant fairs, associations, registries, procurement portals, marketplaces, and directories. Capture source URLs and queries once. Then use targeted web and social search for gaps. Lists discover names; they do not prove purchasing fit.
 3. Normalize candidate names, domains, contacts, and exclusions with `scripts/normalize_candidates.py` when local Python is available. Maintain one company ledger with stable IDs and separate source observations. Reuse it across sessions and agents. Read [research.md](references/research.md).
 4. Verify identity/market, approved buying role, offer/use fit, and a sourced public business route. Assign `contact now`, `call first`, `held`, `excluded`, or `duplicate`. Use separate `explore` tier only when user accepts lower-confidence outreach. Do not force a positive decision to reach a count.
@@ -27,7 +28,7 @@ Run complete customer research for a real offer. Communicate as a capable resear
 
 Search source families in this order: sector lists (fairs, associations, registries, procurement portals), business directories and marketplaces, company-owned websites, then public social profiles. Use each source for its strength: lists find names; company pages establish products and routes; social profiles add current activity or a public contact route. Do not pretend every platform was searched when access was unavailable.
 
-Use the requested count; if unspecified, ask and offer 20. Sample available source families relevant to the sector; use at least three when useful and accessible, but avoid artificial quotas. Deduplicate before deep research. If fewer pass, deliver those found and explain the gap. After delivery, offer to continue or refine targeting. Never pad results.
+Honor requested count, source/platform scope, geography, format, and exclusions. If count is unspecified, ask and offer 20. Sample relevant source families when accessible; don't let preferred source order override an explicitly requested platform. Deduplicate before deep research. If fewer qualify, deliver all that pass and explain exact shortfall and coverage; never pad or silently narrow scope.
 
 ## Tools and recovery
 
