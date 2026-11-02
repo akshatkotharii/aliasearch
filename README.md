@@ -29,6 +29,23 @@ A capable assistant can do prospect research from a prompt. Aliasearch packages 
 
 The skill makes the process repeatable; it does not make an agent inherently smarter or grant access to sources it cannot already reach.
 
+### Aliasearch and other tools
+
+Many prospecting tools start with a company database and build outreach around its records. Aliasearch is designed to investigate the sources that make sense for your specific market, then qualify each candidate against your brief.
+
+| | Aliasearch | Other tools |
+| --- | --- | --- |
+| **Finding companies** | Maps relevant exhibitions, exhibitor lists, showcases, associations, registries, directories, marketplaces and company websites. Uses targeted web searches and search operators to uncover additional sources. | Many begin with a maintained company database; source coverage varies by product. |
+| **Social research** | Can investigate relevant public profiles and posts across platforms available to your assistant, alongside other sources. | Social coverage and depth vary by product and data provider. |
+| **Fit for your offer** | Checks the company, buyer role, market, offer or use case, and a public contact route against your criteria. Missing evidence stays visible. | Many offer filters and AI enrichment; qualification methods vary. |
+| **Context for outreach** | Connects a relevant source-backed signal to your offer and prepares an individual draft for the chosen channel. | Many support personalization; source depth and channel support vary. |
+| **Control and output** | Follows your requested count, locations, exclusions, channels and format. Keeps research evidence available and drafts ready for review. | Some provide large databases, integrated sending, reply handling and scheduling. |
+| **Setup and cost** | Skill files run with a compatible assistant and its available tools; no Aliasearch subscription or API is required. | Pricing, included data and automation vary. |
+
+**Where Aliasearch stands out:** flexible source discovery, research shaped around your exact offer, and transparent reasons for qualification. The Dubai textile research demonstrated why this approach can uncover relevant leads in sources outside a single database. It was not a controlled comparison, so it does not establish a universal coverage or conversion advantage.
+
+Platform access depends on your assistant, available tools and permissions. Aliasearch cannot guarantee access to every social platform or a complete search of the web. Some other tools offer larger proprietary datasets and automate sending and replies; Aliasearch prepares research and drafts for your review.
+
 ## How it works
 
 1. **Clarify the brief.** Carry forward the user's scope, count, market, exclusions, channels, and output. Ask about missing details that could change the result.
