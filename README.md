@@ -1,10 +1,8 @@
 # Aliasearch
 
 <p align="center">
-  <img src="assets/aliasearch-hero.png" alt="Scattered leads become a focused, verified outreach path" width="900">
+  <strong>Find the right buyers. Know why they fit. Start the conversation well.</strong>
 </p>
-
-<p align="center"><strong>Find the right buyers. Know why they fit. Start the conversation well.</strong></p>
 
 <p align="center">A portable customer-research skill for Claude, Codex, Cursor, and compatible agents.</p>
 
@@ -13,6 +11,10 @@
   <a href="#how-it-works">How it works</a> ·
   <a href="#what-you-get">What you get</a> ·
   <a href="#limits">Limits</a>
+</p>
+
+<p align="center">
+  <img src="assets/aliasearch-hero.png" alt="Scattered leads become a focused, verified outreach path" width="760">
 </p>
 
 Aliasearch helps B2B teams turn “find me customers” into a clear brief, focused research, evidence-based qualification, and useful individual outreach drafts. It works across products, services, and markets. **It prepares the work; it never sends messages.**
@@ -31,9 +33,7 @@ It is designed to reduce skipped steps and rework. It does not make an agent inh
 
 ```mermaid
 flowchart LR
-    A["Brief<br/>Offer · buyer · market"] --> B["Source map<br/>Lists · fairs · sites · social"]
-    B --> C["Buyer audit<br/>Identity · fit · contact route"]
-    C --> D["Outreach pack<br/>Evidence · tailored draft"]
+    A["Brief"] --> B["Map sources"] --> C["Verify fit"] --> D["Draft outreach"]
     classDef step fill:#0b1b31,stroke:#19a9e5,color:#ffffff,stroke-width:2px;
     classDef result fill:#162b1f,stroke:#b9e532,color:#ffffff,stroke-width:2px;
     class A,B,C step;
