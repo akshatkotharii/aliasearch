@@ -19,6 +19,7 @@ install_one() {
   target=$1
   mkdir -p "$target"
   cp "$root_dir/SKILL.md" "$target/SKILL.md"
+  cp "$root_dir/VERSION" "$target/VERSION"
   mkdir -p "$target/references" "$target/scripts"
   cp "$root_dir"/references/*.md "$target/references/"
   cp "$root_dir"/scripts/*.py "$target/scripts/"

@@ -8,6 +8,7 @@ trap 'rm -rf "$stage_dir"' EXIT
 
 mkdir -p "$stage_dir/aliasearch/references" "$stage_dir/aliasearch/scripts" "$out_dir"
 cp "$root_dir/SKILL.md" "$stage_dir/aliasearch/"
+cp "$root_dir/VERSION" "$stage_dir/aliasearch/"
 cp "$root_dir"/references/*.md "$stage_dir/aliasearch/references/"
 cp "$root_dir"/scripts/*.py "$stage_dir/aliasearch/scripts/"
 

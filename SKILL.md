@@ -34,6 +34,8 @@ Honor requested count, source/platform scope, geography, format, and exclusions.
 
 Check available search, page reading, browser, code and file-export capabilities once. Prefer built-in web search for discovery, page reading for evidence, browser only for pages requiring interaction, and local code for deduplication and export. Never claim a tool or platform was checked without using it. Do not require installing a tool to begin. If a selected tool fails, diagnose, repair and verify that same route before substituting another route; silent fallback can hide missing coverage. Read [recovery.md](references/recovery.md) for the bounded self-repair loop. If no live search is available, request a source or explain the limitation; never invent current leads.
 
+At most once per session, if local Python and network access are available, run `python3 <skill-directory>/scripts/check_update.py` using this skill's installed directory. Briefly mention a newer version only when the check reports one; otherwise continue silently. This sends a request to GitHub and never installs updates. If unavailable, skip it; never delay research or claim a version is current without a successful check.
+
 ## Efficiency
 
 Cache each URL and excerpt with date and source ID; dedupe before enrichment. Use code for parsing, normalization, completeness checks, counts, and export. Give AI only compact evidence packets for ambiguous fit and personalized writing. Track unique qualified firms, duplicates, usable routes, time, and tokens by source family; stop low-yield routes. Give parallel agents disjoint source slices and one shared ledger. Never require a GPU, paid API, or a particular research extension. Record access gaps accurately.

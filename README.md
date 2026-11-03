@@ -107,6 +107,21 @@ For another compatible local agent, install into its skills folder:
 ./install.sh --list
 ```
 
+## Update
+
+For local installations, open your existing Aliasearch clone and run:
+
+```sh
+git pull --ff-only
+./install.sh --agent codex   # use claude, cursor, or all as appropriate
+```
+
+Restart the agent. If you used `--path`, rerun the installer with that same path. For Claude web or desktop, download the latest [`dist/aliasearch-claude.zip`](dist/aliasearch-claude.zip), replace or re-upload the skill in Claude's Skills settings, and start a fresh chat.
+
+After this version is installed, compatible assistants can check once per session and mention a newer release. You can also run `python3 scripts/check_update.py` from the installed skill folder. The check makes a small request to GitHub, requires Python and network access, and does not update files automatically. Older installations cannot display this notice until updated once. GitHub repository watchers can also choose **Watch → Custom → Releases** for release notifications if releases are published.
+
+Maintainers: increment `VERSION` whenever a published skill, reference or helper changes, then rebuild the Claude ZIP. Otherwise existing installations cannot detect that update.
+
 ## Give it a useful brief
 
 Start with the facts that change who qualifies:
