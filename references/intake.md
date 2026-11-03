@@ -11,7 +11,7 @@ When buyer segments are genuinely unspecified, propose a small set of plausible 
 Track these internally. Mark each `specified`, `missing`, or `conflicting`:
 
 - outcome and intended audience
-- offer, use case, and buyer role
+- offer/use case, target type (organization, buyer, end user, partner, or other), and relevant role
 - geography and requested count
 - include/exclude rules and examples
 - evidence or qualification threshold
@@ -43,7 +43,7 @@ Do not make the user approve a paraphrase of a clear request. Confirm only a dis
 Ask only where relevant:
 
 1. What is offered, what does it replace or enable, and which use cases/specifications decide fit?
-2. Which buyer types and roles matter? What good/bad customer examples exist?
+2. Which target types matter (organizations, named buyers, end users, partners)? What good/bad examples or use signals exist?
 3. Which locations, count, languages, and channels are in scope?
 4. What makes a lead qualified: required product evidence, scale, budget, purchasing role, service area, or public contact route?
 5. Which firms/people/aliases are excluded? What commercial or operational limits apply?

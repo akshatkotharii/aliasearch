@@ -2,10 +2,10 @@
 
 **Find potential customers, understand why they fit, and prepare outreach when you need it.**
 
-Aliasearch is a customer-research skill for compatible AI assistants. Give it an offer, a market and the kind of buyer you want. It searches available sources, checks fit, and returns an actionable list. It can prepare personalized drafts when requested.
+Aliasearch is a customer-research skill for compatible AI assistants. Give it an offer, a market and the people or organizations you want to reach. It searches available sources, checks fit, and returns an actionable list. It can prepare personalized drafts when requested.
 
 <p align="center">
-  <img src="assets/aliasearch-workflow.svg" alt="Find companies, deduplicate records, verify buyer fit and prepare a personalized draft" width="900">
+  <img src="assets/aliasearch-workflow.svg" alt="Find prospects, deduplicate records, verify fit and prepare a personalized draft" width="900">
 </p>
 
 [Install](#install) · [How to use](#use-it) · [How it works](#how-it-works) · [Update](#update)
@@ -30,9 +30,11 @@ Restart your agent. Use `/aliasearch` in Claude Code or ask your assistant to us
 
 ## Use it
 
-Tell your assistant what you sell, who you want to reach, where, and how many contacts you need. Include exclusions and any must-have fit criteria. Ask for messages or a specific file format if you want them.
+Tell your assistant what you offer, who you want to reach (organizations or individual users), where, and how many prospects you need. Include exclusions and must-have fit criteria. Ask for messages or a specific file format when useful.
 
-> Use Aliasearch to find 40 wholesale buyers in Indonesia for my cotton shirting fabric. Exclude my existing customers, which I will provide. Prioritize product evidence and a public email route. Give me a spreadsheet and individual email drafts.
+> Find 40 wholesale buyers in Indonesia for my cotton shirting fabric. Exclude existing customers I provide. Prioritize product evidence and public email routes. Return a spreadsheet with individual email drafts.
+
+> Find 30 students in India and elsewhere who publicly describe difficulty taking notes from lecture videos. Use Reddit and LinkedIn profiles, link each profile to the specific post that supports the fit, and draft a short feedback message.
 
 Aliasearch asks about missing details that could change the search. If you do not specify a count, it asks and suggests 20. It will not pad the list when fewer candidates qualify.
 
@@ -40,7 +42,7 @@ Aliasearch asks about missing details that could change the search. If you do no
 
 1. **Understand the brief:** use supplied details and resolve material gaps.
 2. **Find candidates:** choose relevant fairs, associations, directories, marketplaces, company sites, web searches and accessible social profiles.
-3. **Check fit and contact routes:** deduplicate and verify identity, buyer role, offer fit, market and sourced contact details.
+3. **Check fit and contact routes:** deduplicate and verify identity, buyer role or end-user use case, offer fit, market and sourced contact routes.
 4. **Deliver useful results:** provide a lean contact list with reasons and sources; prepare channel-specific drafts when requested.
 
 Research and source notes can be kept separately from the user-facing list. Aliasearch does not send messages on its own.
@@ -72,10 +74,10 @@ Python 3.10+ is needed for the CSV normalizer; no extra Python packages are requ
 ```sh
 python3 scripts/doctor.py
 python3 scripts/normalize_candidates.py candidates.csv --output normalized.csv --collisions review.csv
-python3 scripts/evidence_packet.py evidence.jsonl --company-id C001 > packet.jsonl
+python3 scripts/evidence_packet.py evidence.jsonl --prospect-id P001 > packet.jsonl
 ```
 
-The normalizer suggests duplicates for review. The evidence helper selects complete JSONL records with a `company_id`. Neither verifies contacts or buyer fit. The doctor cannot verify your assistant's web or social access. Token savings depend on the host and remain unmeasured.
+The CSV normalizer handles organization candidates and suggests duplicate groups for review; it does not deduplicate individual social profiles. The evidence helper selects complete JSONL records with a `prospect_id` or legacy `company_id`. Neither verifies contact routes or fit. The doctor cannot verify your assistant's web or social access. Token savings depend on the host and remain unmeasured.
 </details>
 
 ## Limits

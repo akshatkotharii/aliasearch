@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
   <title id="title">Aliasearch workflow</title>
-  <desc id="desc">Find buyer companies across exhibitions, directories, websites and public social profiles; merge duplicates; verify fit; prepare a tailored unsent outreach draft.</desc>
+  <desc id="desc">Find people and organizations across exhibitions, directories, websites and public social profiles; merge duplicates; verify fit; prepare a tailored unsent outreach draft.</desc>
   <defs>
     <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
       <path d="M1 1l5 3-5 3" fill="none" stroke="#71848C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -71,18 +71,18 @@
   <rect x="656" y="330" width="108" height="88" rx="5" fill="#FFFFFF" stroke="#BFCBC7" stroke-width="1.5"/>
   <rect x="656" y="330" width="108" height="8" fill="#4F7184"/>
   <path d="M673 360h74M673 377h54M673 394h66" class="line"/>
-  <text x="614" y="479" class="blue" font-size="20" font-weight="650">One company</text>
+  <text x="614" y="479" class="blue" font-size="20" font-weight="650">One prospect</text>
 
   <!-- 3: Qualify -->
   <circle cx="856" cy="206" r="18" fill="#4F7184"/>
   <text x="856" y="213" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">3</text>
-  <text x="888" y="214" class="ink" font-size="28" font-weight="650">Verify buyer fit</text>
+  <text x="888" y="214" class="ink" font-size="28" font-weight="650">Verify fit</text>
   <path d="M844 244h300" stroke="#E2E5E1" stroke-width="1.5"/>
 
   <rect x="844" y="282" width="300" height="54" rx="5" class="tile"/>
   <circle cx="875" cy="309" r="11" fill="#DCE6E8"/>
   <path d="M870 309l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="316" class="ink" font-size="21">Buyer role</text>
+  <text x="901" y="316" class="ink" font-size="21">Target role / need</text>
 
   <rect x="844" y="352" width="300" height="54" rx="5" class="tile"/>
   <circle cx="875" cy="379" r="11" fill="#DCE6E8"/>
