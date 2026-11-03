@@ -50,7 +50,10 @@ def domain(value: str) -> str:
         value = value.rsplit("@", 1)[1]
     if "://" not in value:
         value = "https://" + value
-    host = (urlparse(value).hostname or "").lower()
+    try:
+        host = (urlparse(value).hostname or "").lower()
+    except ValueError:
+        return ""
     return host[4:] if host.startswith("www.") else host
 
 
@@ -71,7 +74,7 @@ def read_exclusions(path: Path | None) -> set[str]:
     for line in path.read_text(encoding="utf-8").splitlines():
         line = line.strip()
         if line:
-            values.update({line.lower(), text_key(line), domain(line)})
+            values.update(value for value in (line.lower(), text_key(line), domain(line)) if value)
     return values
 
 
@@ -87,10 +90,17 @@ def main() -> None:
     parser.add_argument("--exclusions", type=Path, help="One existing-customer/excluded company or domain per line")
     args = parser.parse_args()
 
+    protected = {args.input.resolve()}
+    if args.exclusions:
+        protected.add(args.exclusions.resolve())
+    if args.output.resolve() in protected or (args.collisions and (args.collisions.resolve() in protected or args.collisions.resolve() == args.output.resolve())):
+        parser.error("Output paths must be distinct from inputs and each other.")
+
     with args.input.open(newline="", encoding="utf-8-sig") as handle:
         reader = csv.DictReader(handle)
         if not reader.fieldnames:
             raise SystemExit("Input CSV has no header row.")
+        input_fields = list(reader.fieldnames)
         rows = list(reader)
 
     exclusions = read_exclusions(args.exclusions)
@@ -112,7 +122,7 @@ def main() -> None:
         key = f"domain:{normal_domain}" if normal_domain else (
             f"name:{normal_company}|city:{text_key(city)}|market:{text_key(country)}" if normal_company else f"unidentified:{index}"
         )
-        exclusion_match = normal_company in exclusions or normal_domain in exclusions
+        exclusion_match = bool((normal_company and normal_company in exclusions) or (normal_domain and normal_domain in exclusions) or (company and company.lower() in exclusions))
         value = dict(row)
         value.update(
             {
@@ -139,7 +149,7 @@ def main() -> None:
         "record_number", "normalized_company", "normalized_domain", "normalized_email", "normalized_phone",
         "candidate_key", "exclusion_match", "duplicate_group", "duplicate_of_record_number", "review_needed",
     ]
-    fieldnames = list(rows[0].keys()) + [field for field in extra if field not in rows[0]] if rows else extra
+    fieldnames = input_fields + [field for field in extra if field not in input_fields]
     with args.output.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()

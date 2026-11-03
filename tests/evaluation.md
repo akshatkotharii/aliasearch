@@ -7,6 +7,9 @@ Run each case once with Aliasearch and once without it, in fresh sessions using 
 3. Local business: commercial cleaning for offices in Manchester; user asks for 8 contacts and phone routes.
 4. Constraint-heavy prompt: user requests 60 wholesale buyers in two named cities, Instagram and email routes, a CSV with six specified fields, and explicit exclusions. Check every instruction survives through delivery; do not replace scope with a 20-lead sample or a preferred workbook.
 5. Context-poor prompt: user says “find customers” and asks for no assumptions. Ask all decision-changing questions needed for offer, buyer, geography, count, exclusions, qualification, and output in a concise grouped turn; do not impose a three-question cap or begin dependent prospect selection.
+6. Contacts only: user explicitly asks for a sourced list without drafts; verify no messages are generated or required for delivery.
+7. Social evidence: compare a clearly attributable business profile showing a specific relevant product with a generic search snippet. Assess each gate separately; do not treat either item alone as proof of purchasing role or an available route.
+8. Delegation: when the host supports parallel work, split sources and reconcile overlapping names and missing agent results; compare with the same sequential task. When unsupported, complete sequentially without claiming agents were used.
 
 Score: prompt fidelity, honoring count/scope/channels/format/exclusions, asking all material unknowns without re-asking known facts, source diversity when useful, actual offer fit, source-supported route, duplicate rate, usable wording, lean output, and false claims. Research judgment may add insight but must not override explicit user instructions. If reply goal is missing, ask when it changes the draft; otherwise choose a low-friction next step. Independently inspect every delivered contact.
 
