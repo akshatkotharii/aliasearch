@@ -1,8 +1,8 @@
 # Aliasearch
 
-**Intro:** Aliasearch helps AI assistants find the right people or organizations for an offer.
+**Intro:** Aliasearch turns a business offer into a focused, evidence-backed prospect list.
 
-**Summary:** It searches public sources, checks evidence-backed fit and contact routes, removes duplicates, and prepares personalized outreach drafts.
+**Summary:** It finds and qualifies organizations or individual users across accessible public sources, checks contact routes, removes duplicates, and prepares tailored outreach drafts.
 
 <p align="center">
   <img src="assets/aliasearch-workflow.svg" alt="Find prospects, deduplicate records, verify fit and prepare a personalized draft" width="900">
