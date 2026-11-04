@@ -1,8 +1,8 @@
 # Aliasearch
 
-**Find potential customers, understand why they fit, and prepare outreach when you need it.**
+**Intro:** Aliasearch helps AI assistants find the right people or organizations for an offer.
 
-Aliasearch is a customer-research skill for compatible AI assistants. Give it an offer, a market and the people or organizations you want to reach. It searches available sources, checks fit, and returns an actionable list. It can prepare personalized drafts when requested.
+**Summary:** It searches public sources, checks evidence-backed fit and contact routes, removes duplicates, and prepares personalized outreach drafts.
 
 <p align="center">
   <img src="assets/aliasearch-workflow.svg" alt="Find prospects, deduplicate records, verify fit and prepare a personalized draft" width="900">
