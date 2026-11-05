@@ -2,6 +2,21 @@
 
 Check capabilities once per session with tool metadata or one minimal read-only probe. Prefer native search and page tools; use an authorized browser only for interactive or logged-in pages. Use local code for deterministic transforms. Save brief, ledger and source log before risky recovery work.
 
+## Installation and package recovery
+
+Treat these as separate claims and verify each one independently:
+
+1. **Files copied:** expected `SKILL.md`, `VERSION`, references and helpers exist in the selected target.
+2. **Files match:** run `./install.sh --verify --agent NAME` or `./install.sh --verify --path PATH`; all packaged files match the current checkout and reported version.
+3. **Host recognized the skill:** restart or open a new chat when required, then inspect the host's available-skill list or invoke Aliasearch with a harmless request. Copied files alone do not prove discovery.
+4. **Research capabilities work:** make one minimal read-only search or page request. Skill recognition does not prove web, browser, social-session, export, or account access.
+
+When installation fails, run `./install.sh --list`, confirm the chosen host and destination, then inspect the shortest failing path or permission error. Re-run only the affected install after correcting that cause. For a custom host, use `--path` with its documented skill directory. Do not copy into several guessed directories.
+
+For an uploaded ZIP, confirm the archive contains one top-level `aliasearch/` folder with `SKILL.md`, `VERSION`, `references/`, and `scripts/`. Rebuild it with `scripts/package_claude_upload.sh` when package contents or version differ. Upload success does not prove the host enabled or invoked the skill; verify in a new chat.
+
+Never repair a missing search capability by claiming the skill bundles that capability. The package supplies instructions and deterministic helpers; search engines, browsers, authenticated sessions, platform adapters, and paid data remain host capabilities. Diagnose those through the same bounded loop below.
+
 ## Repair before fallback
 
 When a chosen tool fails, keep the failed route as primary until this loop finishes:
@@ -28,5 +43,7 @@ Fallback is allowed only when the route cannot be repaired safely, the source it
 - Insufficient qualified leads: report count and searched coverage; never weaken gates without permission.
 - Export failure: preserve canonical data; repair writer/runtime first, verify file opens, then use CSV or in-chat output only if repair fails.
 - Interrupted run: resume from saved brief, ledger and source log without repeating completed work.
+- Skill not detected: verify target and package match, restart or open a new chat, then perform one harmless invocation. If still absent, use the host's documented skill directory or upload flow; do not claim success from copied files.
+- Version mismatch or partial copy: rerun installer for the exact target, verify every packaged file, then restart the host. Preserve user-edited external files and never delete a broad skill directory to hide stale content.
 
 Report outcome, material coverage gap, and required user action only. Never dump long logs or claim recovery without the verification step.

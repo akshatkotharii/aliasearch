@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="760" viewBox="0 0 1440 760" role="img" aria-labelledby="title desc">
+  <title id="title">Illustrative Aliasearch prospect output</title>
+  <desc id="desc">Demo prospect shortlist with fit, contact route, evidence, and tailored message fields.</desc>
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#14231D" flood-opacity=".10"/>
+    </filter>
+    <style>
+      text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .eyebrow { fill:#3A6E60; font-size:14px; font-weight:800; letter-spacing:2px; }
+      .heading { fill:#172620; font-size:34px; font-weight:730; }
+      .muted { fill:#6A7972; font-size:16px; }
+      .head { fill:#52645C; font-size:13px; font-weight:800; letter-spacing:.7px; }
+      .name { fill:#1B2A24; font-size:18px; font-weight:700; }
+      .body { fill:#52645C; font-size:15px; }
+      .small { fill:#738078; font-size:13px; }
+      .good { fill:#276D59; font-size:13px; font-weight:800; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="760" rx="28" fill="#F1F5F2"/>
+  <text x="66" y="70" class="eyebrow">ILLUSTRATIVE OUTPUT · DEMO DATA</text>
+  <text x="66" y="118" class="heading">A shortlist built for action, not inspection work.</text>
+  <text x="66" y="151" class="muted">Contact view stays lean. Evidence and audit history remain linked behind each prospect ID.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="64" y="190" width="1312" height="494" rx="18" fill="#FFFFFF"/>
+  </g>
+
+  <rect x="64" y="190" width="1312" height="64" rx="18" fill="#173B31"/>
+  <rect x="64" y="236" width="1312" height="18" fill="#173B31"/>
+  <text x="94" y="229" fill="#FFFFFF" font-size="18" font-weight="700">Qualified prospects</text>
+  <rect x="1218" y="207" width="126" height="30" rx="15" fill="#285346"/>
+  <text x="1281" y="227" text-anchor="middle" fill="#DCECE6" font-size="12" font-weight="800">3 CONTACT NOW</text>
+
+  <rect x="64" y="254" width="1312" height="54" fill="#F6F8F6"/>
+  <text x="94" y="287" class="head">PROSPECT</text>
+  <text x="342" y="287" class="head">RELEVANT OFFER</text>
+  <text x="578" y="287" class="head">WHY THIS FITS</text>
+  <text x="926" y="287" class="head">BEST ROUTE</text>
+  <text x="1156" y="287" class="head">MESSAGE</text>
+
+  <line x1="64" y1="308" x2="1376" y2="308" stroke="#DDE5E1"/>
+  <line x1="64" y1="430" x2="1376" y2="430" stroke="#DDE5E1"/>
+  <line x1="64" y1="552" x2="1376" y2="552" stroke="#DDE5E1"/>
+  <line x1="316" y1="254" x2="316" y2="674" stroke="#E3E9E6"/>
+  <line x1="552" y1="254" x2="552" y2="674" stroke="#E3E9E6"/>
+  <line x1="900" y1="254" x2="900" y2="674" stroke="#E3E9E6"/>
+  <line x1="1130" y1="254" x2="1130" y2="674" stroke="#E3E9E6"/>
+
+  <circle cx="100" cy="350" r="18" fill="#DCECE6"/>
+  <text x="100" y="356" text-anchor="middle" class="good">A</text>
+  <text x="130" y="349" class="name">Atlas Supply Co.</text>
+  <text x="130" y="375" class="small">Organization · P-014</text>
+  <rect x="130" y="390" width="94" height="22" rx="11" fill="#E6F1ED"/>
+  <text x="177" y="405" text-anchor="middle" class="good">CONTACT NOW</text>
+
+  <text x="342" y="349" class="body">Uniform fabric</text>
+  <text x="342" y="375" class="body">Poly-viscose blend</text>
+  <text x="578" y="345" class="body">Corporate-wear range</text>
+  <text x="578" y="369" class="body">and public wholesale</text>
+  <text x="578" y="393" class="body">enquiry route.</text>
+  <text x="926" y="349" class="body">Email</text>
+  <text x="926" y="375" class="small">sales@demo.example</text>
+  <text x="1156" y="349" class="body">Tailored email</text>
+  <text x="1156" y="375" class="small">Ready for review</text>
+  <rect x="1156" y="392" width="90" height="4" rx="2" fill="#DFA66D"/>
+
+  <circle cx="100" cy="472" r="18" fill="#EEE6DA"/>
+  <text x="100" y="478" text-anchor="middle" fill="#916037" font-size="13" font-weight="800">N</text>
+  <text x="130" y="471" class="name">Northline Studio</text>
+  <text x="130" y="497" class="small">Organization · P-027</text>
+  <rect x="130" y="512" width="94" height="22" rx="11" fill="#E6F1ED"/>
+  <text x="177" y="527" text-anchor="middle" class="good">CONTACT NOW</text>
+
+  <text x="342" y="471" class="body">Printed cotton</text>
+  <text x="342" y="497" class="body">Kidswear use</text>
+  <text x="578" y="467" class="body">Recent kidswear launch</text>
+  <text x="578" y="491" class="body">and fabric sourcing</text>
+  <text x="578" y="515" class="body">contact confirmed.</text>
+  <text x="926" y="471" class="body">Contact form</text>
+  <text x="926" y="497" class="small">Company website</text>
+  <text x="1156" y="471" class="body">Tailored note</text>
+  <text x="1156" y="497" class="small">Ready for review</text>
+  <rect x="1156" y="514" width="90" height="4" rx="2" fill="#DFA66D"/>
+
+  <circle cx="100" cy="594" r="18" fill="#E3E8EF"/>
+  <text x="100" y="600" text-anchor="middle" fill="#526984" font-size="13" font-weight="800">R</text>
+  <text x="130" y="593" class="name">Riya M.</text>
+  <text x="130" y="619" class="small">Individual · P-041</text>
+  <rect x="130" y="634" width="94" height="22" rx="11" fill="#E6F1ED"/>
+  <text x="177" y="649" text-anchor="middle" class="good">CONTACT NOW</text>
+
+  <text x="342" y="593" class="body">Research interview</text>
+  <text x="342" y="619" class="body">Lecture-note workflow</text>
+  <text x="578" y="589" class="body">Public post describes</text>
+  <text x="578" y="613" class="body">the exact problem and</text>
+  <text x="578" y="637" class="body">was posted recently.</text>
+  <text x="926" y="593" class="body">Profile message</text>
+  <text x="926" y="619" class="small">Exact profile linked</text>
+  <text x="1156" y="593" class="body">Short DM</text>
+  <text x="1156" y="619" class="small">Post context preserved</text>
+  <rect x="1156" y="636" width="90" height="4" rx="2" fill="#DFA66D"/>
+
+  <text x="66" y="722" class="small">Names, domains, and routes shown here are fictional. Actual exports retain source links and requested fields.</text>
+</svg>

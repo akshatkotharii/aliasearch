@@ -1,112 +1,101 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
-  <title id="title">Aliasearch workflow</title>
-  <desc id="desc">Find people and organizations across exhibitions, directories, websites and public social profiles; merge duplicates; verify fit; prepare a tailored unsent outreach draft.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title desc">
+  <title id="title">Aliasearch prospect research workflow</title>
+  <desc id="desc">A four-stage editorial workflow: brief, discover, verify, and deliver.</desc>
   <defs>
-    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth">
-      <path d="M1 1l5 3-5 3" fill="none" stroke="#71848C" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-    </marker>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAF8"/>
+      <stop offset="1" stop-color="#EEF3F0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#14231D" flood-opacity=".08"/>
+    </filter>
     <style>
       text { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-      .ink { fill: #26343A; }
-      .muted { fill: #68777E; }
-      .blue { fill: #4F7184; }
-      .rust { fill: #B86D50; }
-      .panel { fill: #FCFCFA; stroke: #D9DEDA; stroke-width: 1.5; }
-      .tile { fill: #FFFFFF; stroke: #D9DEDA; stroke-width: 1.4; }
-      .line { fill: none; stroke: #92A1A5; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+      .eyebrow { fill:#357061; font-size:15px; font-weight:750; letter-spacing:2.2px; }
+      .heading { fill:#172620; font-size:42px; font-weight:720; }
+      .sub { fill:#607068; font-size:19px; }
+      .num { fill:#FFFFFF; font-size:15px; font-weight:800; }
+      .card-title { fill:#172620; font-size:25px; font-weight:700; }
+      .body { fill:#617169; font-size:17px; }
+      .label { fill:#355D52; font-size:14px; font-weight:700; letter-spacing:.6px; }
+      .line { stroke:#8DA099; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:none; }
     </style>
   </defs>
 
-  <rect width="1600" height="640" fill="#F6F5F1"/>
-  <text x="64" y="76" class="ink" font-size="38" font-weight="650">From discovery to a relevant first contact</text>
-  <text x="66" y="116" class="muted" font-size="18" font-weight="600" letter-spacing="1.7">DISCOVER  /  DEDUPLICATE  /  QUALIFY  /  PERSONALIZE</text>
+  <rect width="1440" height="720" rx="28" fill="url(#bg)"/>
+  <circle cx="1320" cy="88" r="170" fill="#DCEAE4" opacity=".58"/>
+  <circle cx="88" cy="692" r="180" fill="#F0E4D8" opacity=".62"/>
 
-  <!-- Equal panels with consistent padding -->
-  <rect x="64" y="160" width="340" height="420" rx="8" class="panel"/>
-  <rect x="444" y="160" width="340" height="420" rx="8" class="panel"/>
-  <rect x="824" y="160" width="340" height="420" rx="8" class="panel"/>
-  <rect x="1204" y="160" width="332" height="420" rx="8" class="panel"/>
-  <path d="M408 370h28M788 370h28M1168 370h28" class="line" marker-end="url(#arrow)"/>
+  <text x="72" y="78" class="eyebrow">ALIASEARCH · PROSPECT RESEARCH</text>
+  <text x="72" y="132" class="heading">From a business offer to a shortlist you can trust.</text>
+  <text x="72" y="171" class="sub">One brief. Broad discovery. Evidence-backed decisions. Clear next contact.</text>
 
-  <!-- 1: Find sources -->
-  <circle cx="96" cy="206" r="18" fill="#4F7184"/>
-  <text x="96" y="213" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">1</text>
-  <text x="128" y="214" class="ink" font-size="28" font-weight="650">Find sources</text>
-  <path d="M84 244h300" stroke="#E2E5E1" stroke-width="1.5"/>
+  <path d="M258 404H376M602 404H720M946 404H1064" stroke="#9AB0A8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M366 396l12 8-12 8M710 396l12 8-12 8M1054 396l12 8-12 8" class="line"/>
 
-  <rect x="84" y="272" width="140" height="118" rx="5" class="tile"/>
-  <path d="M105 322h40v31h-40zM100 322l25-18 25 18M114 332v21M136 332v21" class="line"/>
-  <text x="104" y="374" class="ink" font-size="21" font-weight="600">Exhibitions</text>
+  <g filter="url(#shadow)">
+    <rect x="72" y="230" width="286" height="356" rx="18" fill="#FFFFFF" stroke="#DCE5E1"/>
+    <rect x="416" y="230" width="286" height="356" rx="18" fill="#FFFFFF" stroke="#DCE5E1"/>
+    <rect x="760" y="230" width="286" height="356" rx="18" fill="#FFFFFF" stroke="#DCE5E1"/>
+    <rect x="1104" y="230" width="264" height="356" rx="18" fill="#173B31"/>
+  </g>
 
-  <rect x="244" y="272" width="140" height="118" rx="5" class="tile"/>
-  <path d="M266 303h34v49h-34zM273 314h20M273 324h20M273 334h16M273 344h18" class="line"/>
-  <text x="264" y="374" class="ink" font-size="21" font-weight="600">Directories</text>
+  <circle cx="112" cy="274" r="20" fill="#367764"/>
+  <text x="112" y="280" text-anchor="middle" class="num">01</text>
+  <text x="144" y="282" class="card-title">Brief</text>
+  <text x="96" y="332" class="body">Offer and proof</text>
+  <text x="96" y="365" class="body">Ideal buyer or user</text>
+  <text x="96" y="398" class="body">Geography and count</text>
+  <text x="96" y="431" class="body">Exclusions and channels</text>
+  <rect x="96" y="474" width="160" height="38" rx="19" fill="#E7F1ED"/>
+  <text x="176" y="499" text-anchor="middle" class="label">CONTEXT LOCKED</text>
+  <path d="M96 545h194" stroke="#DCE5E1"/>
+  <text x="96" y="568" class="body" font-size="14">No silent assumptions</text>
 
-  <rect x="84" y="408" width="140" height="118" rx="5" class="tile"/>
-  <rect x="105" y="434" width="40" height="30" rx="2" class="line"/>
-  <path d="M106 442h38M112 450h11M128 450h11M112 458h27" class="line"/>
-  <text x="104" y="510" class="ink" font-size="21" font-weight="600">Websites</text>
+  <circle cx="456" cy="274" r="20" fill="#367764"/>
+  <text x="456" y="280" text-anchor="middle" class="num">02</text>
+  <text x="488" y="282" class="card-title">Discover</text>
+  <rect x="440" y="326" width="106" height="42" rx="8" fill="#F2F5F3"/>
+  <rect x="558" y="326" width="120" height="42" rx="8" fill="#F2F5F3"/>
+  <rect x="440" y="380" width="136" height="42" rx="8" fill="#F2F5F3"/>
+  <rect x="588" y="380" width="90" height="42" rx="8" fill="#F2F5F3"/>
+  <rect x="440" y="434" width="108" height="42" rx="8" fill="#F2F5F3"/>
+  <rect x="560" y="434" width="118" height="42" rx="8" fill="#F2F5F3"/>
+  <text x="493" y="352" text-anchor="middle" class="label">FAIRS</text>
+  <text x="618" y="352" text-anchor="middle" class="label">DIRECTORIES</text>
+  <text x="508" y="406" text-anchor="middle" class="label">MARKETPLACES</text>
+  <text x="633" y="406" text-anchor="middle" class="label">WEB</text>
+  <text x="494" y="460" text-anchor="middle" class="label">COMPANY</text>
+  <text x="619" y="460" text-anchor="middle" class="label">SOCIAL</text>
+  <path d="M440 520h238" stroke="#DCE5E1"/>
+  <text x="440" y="555" class="body">Names found across sources</text>
 
-  <rect x="244" y="408" width="140" height="118" rx="5" class="tile"/>
-  <circle cx="277" cy="448" r="14" fill="#DCE6E8"/>
-  <circle cx="277" cy="444" r="4" fill="#4F7184"/>
-  <path d="M268 455c2-7 16-7 18 0M301 440h40M301 450h45M301 460h33" class="line"/>
-  <text x="264" y="510" class="ink" font-size="21" font-weight="600">Public social</text>
+  <circle cx="800" cy="274" r="20" fill="#367764"/>
+  <text x="800" y="280" text-anchor="middle" class="num">03</text>
+  <text x="832" y="282" class="card-title">Verify</text>
+  <circle cx="800" cy="343" r="12" fill="#DCECE6"/>
+  <circle cx="800" cy="393" r="12" fill="#DCECE6"/>
+  <circle cx="800" cy="443" r="12" fill="#DCECE6"/>
+  <circle cx="800" cy="493" r="12" fill="#DCECE6"/>
+  <path d="M794 343l4 4 8-9M794 393l4 4 8-9M794 443l4 4 8-9M794 493l4 4 8-9" stroke="#28705B" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="826" y="349" class="body">Identity and market</text>
+  <text x="826" y="399" class="body">Buyer or user signal</text>
+  <text x="826" y="449" class="body">Offer fit and recency</text>
+  <text x="826" y="499" class="body">Sourced contact route</text>
+  <text x="784" y="555" class="label">DEDUPLICATED · EVIDENCE SAVED</text>
 
-  <!-- 2: Merge duplicates -->
-  <circle cx="476" cy="206" r="18" fill="#4F7184"/>
-  <text x="476" y="213" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">2</text>
-  <text x="508" y="214" class="ink" font-size="28" font-weight="650">Merge duplicates</text>
-  <path d="M464 244h300" stroke="#E2E5E1" stroke-width="1.5"/>
+  <circle cx="1144" cy="274" r="20" fill="#DFA66D"/>
+  <text x="1144" y="280" text-anchor="middle" class="num">04</text>
+  <text x="1176" y="282" fill="#FFFFFF" font-size="25" font-weight="700">Deliver</text>
+  <rect x="1128" y="326" width="216" height="154" rx="12" fill="#214C40" stroke="#3D665B"/>
+  <text x="1150" y="357" fill="#BFD8CF" font-size="13" font-weight="750" letter-spacing=".8">PROSPECT P-014</text>
+  <text x="1150" y="392" fill="#FFFFFF" font-size="18" font-weight="650">Qualified contact</text>
+  <path d="M1150 416h170M1150 440h142" stroke="#6A8B81" stroke-width="2" stroke-linecap="round"/>
+  <rect x="1150" y="454" width="84" height="10" rx="5" fill="#DFA66D"/>
+  <text x="1128" y="525" fill="#DCECE6" font-size="17">Best route + reason</text>
+  <text x="1128" y="555" fill="#DCECE6" font-size="17">Tailored draft if requested</text>
 
-  <rect x="464" y="293" width="132" height="66" rx="5" class="tile"/>
-  <circle cx="486" cy="326" r="10" fill="#DCE6E8"/>
-  <path d="M482 326h8M486 322v8" class="line"/>
-  <text x="506" y="332" class="ink" font-size="19" font-weight="600">Record A</text>
-  <rect x="464" y="389" width="132" height="66" rx="5" class="tile"/>
-  <circle cx="486" cy="422" r="10" fill="#EEDFD7"/>
-  <path d="M482 422h8M486 418v8" class="line"/>
-  <text x="506" y="428" class="ink" font-size="19" font-weight="600">Record B</text>
-  <path d="M596 326h26v96h20M596 422h26M642 374h13" class="line" marker-end="url(#arrow)"/>
-  <rect x="656" y="330" width="108" height="88" rx="5" fill="#FFFFFF" stroke="#BFCBC7" stroke-width="1.5"/>
-  <rect x="656" y="330" width="108" height="8" fill="#4F7184"/>
-  <path d="M673 360h74M673 377h54M673 394h66" class="line"/>
-  <text x="614" y="479" class="blue" font-size="20" font-weight="650">One prospect</text>
-
-  <!-- 3: Qualify -->
-  <circle cx="856" cy="206" r="18" fill="#4F7184"/>
-  <text x="856" y="213" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">3</text>
-  <text x="888" y="214" class="ink" font-size="28" font-weight="650">Verify fit</text>
-  <path d="M844 244h300" stroke="#E2E5E1" stroke-width="1.5"/>
-
-  <rect x="844" y="282" width="300" height="54" rx="5" class="tile"/>
-  <circle cx="875" cy="309" r="11" fill="#DCE6E8"/>
-  <path d="M870 309l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="316" class="ink" font-size="21">Target role / need</text>
-
-  <rect x="844" y="352" width="300" height="54" rx="5" class="tile"/>
-  <circle cx="875" cy="379" r="11" fill="#DCE6E8"/>
-  <path d="M870 379l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="386" class="ink" font-size="21">Offer fit</text>
-
-  <rect x="844" y="422" width="300" height="54" rx="5" class="tile"/>
-  <circle cx="875" cy="449" r="11" fill="#DCE6E8"/>
-  <path d="M870 449l4 4 7-8" fill="none" stroke="#426D7F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="901" y="456" class="ink" font-size="21">Market + contact route</text>
-
-  <!-- 4: Prepare contact -->
-  <circle cx="1236" cy="206" r="18" fill="#4F7184"/>
-  <text x="1236" y="213" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">4</text>
-  <text x="1268" y="214" class="ink" font-size="28" font-weight="650">Prepare contact</text>
-  <path d="M1224 244h292" stroke="#E2E5E1" stroke-width="1.5"/>
-
-  <rect x="1224" y="272" width="292" height="254" rx="5" fill="#FFFFFF" stroke="#D9DEDA" stroke-width="1.5"/>
-  <rect x="1224" y="272" width="292" height="48" fill="#E8EEF0"/>
-  <path d="M1245 290l14 10 14-10M1245 290v18h28v-18" class="line"/>
-  <text x="1288" y="303" class="ink" font-size="18" font-weight="600">Tailored draft · unsent</text>
-  <path d="M1248 356h244M1248 382h226M1248 408h238M1248 434h196" class="line"/>
-  <rect x="1248" y="466" width="146" height="38" rx="19" fill="#E4EDF0"/>
-  <text x="1321" y="491" text-anchor="middle" class="blue" font-size="16" font-weight="650">Contact route</text>
-  <rect x="1405" y="466" width="82" height="38" rx="19" fill="#F2E7DF"/>
-  <text x="1446" y="491" text-anchor="middle" class="rust" font-size="16" font-weight="650">Email</text>
+  <rect x="72" y="632" width="1296" height="1" fill="#D1DCD7"/>
+  <text x="72" y="670" fill="#617169" font-size="15">DISCOVERY FINDS NAMES</text>
+  <text x="1262" y="670" text-anchor="end" fill="#357061" font-size="15" font-weight="750">EVIDENCE EARNS THE SHORTLIST</text>
 </svg>
