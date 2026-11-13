@@ -45,5 +45,6 @@ Fallback is allowed only when the route cannot be repaired safely, the source it
 - Interrupted run: resume from saved brief, ledger and source log without repeating completed work.
 - Skill not detected: verify target and package match, restart or open a new chat, then perform one harmless invocation. If still absent, use the host's documented skill directory or upload flow; do not claim success from copied files.
 - Version mismatch or partial copy: rerun installer for the exact target, verify every packaged file, then restart the host. Preserve user-edited external files and never delete a broad skill directory to hide stale content.
+- Trade-code or shipment portal failure: preserve product description, candidate codes, jurisdiction, direction, dates, and completed results. Check code-version mismatch, changed tariff, paywall, login, rate limit, and country coverage separately. Fall back from company-level data to aggregate market evidence only with an explicit coverage note; never present country totals as named-buyer evidence.
 
 Report outcome, material coverage gap, and required user action only. Never dump long logs or claim recovery without the verification step.

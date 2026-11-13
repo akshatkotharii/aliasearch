@@ -52,4 +52,14 @@ Ask only where relevant:
 
 For product research, build the sector map from public information; do not make the user supply industry terminology or search sources. Ask only when the market has distinct buyer interpretations that change who qualifies.
 
+## Conditional trade questions
+
+Use these only for physical goods when cross-border importer/exporter evidence could materially improve discovery. Do not add them to service, software, individual-user, local-only, or unrelated research.
+
+- Ask whether the user already knows an HS, HSN, HTS, CN, or national tariff code. A code is optional.
+- If no code is supplied, infer candidate code families from the product description and public classification sources. Ask only for missing characteristics that change classification, such as material or composition, physical form, construction or manufacturing method, end use, weight or dimensions, finish, packaging, and destination jurisdiction.
+- Ask import versus export direction, origin, destination, and relevant time range only when they change the trade-data query.
+- Never make the user find a code before research can begin. Label inferred codes as candidates until verified against the current tariff for the relevant jurisdiction.
+- Do not ask for trade details merely because the offer is a physical product. Use this branch when trade flows or shipment records are likely to improve market selection or company discovery.
+
 Keep the request contract concise and internal. Do not paste it into every lead row. At delivery, follow requested output first; put additional recommendations separately and only when useful.

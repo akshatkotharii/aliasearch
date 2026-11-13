@@ -27,6 +27,7 @@ Aliasearch keeps the research disciplined:
 
 - **Full context first:** preserves offer, audience, geography, exclusions, count, channels, proof claims, and output requirements.
 - **Broader discovery:** maps fairs, associations, registries, procurement portals, marketplaces, company sites, web results, and accessible social profiles.
+- **Optional trade intelligence:** for relevant physical goods, can infer candidate HS/HSN families, examine product-country flows, and use accessible shipment sources to discover importers or exporters.
 - **Evidence before outreach:** separates discovery sources from proof of fit and links each decision to public evidence.
 - **Useful contact routes:** records where contact can happen instead of returning a list of names alone.
 - **No padded lists:** deduplicates candidates and reports honest shortfalls when fewer prospects pass.
@@ -61,6 +62,8 @@ Detailed evidence, alternate routes, rejected candidates, missing gates, and dup
 4. **Deliver** — deduplicates, ranks by decision, keeps evidence traceable, and drafts channel-specific outreach when requested.
 
 The requested prospect count remains the target. If no count is given, Aliasearch asks and suggests 20. It never silently turns a full search into a sample.
+
+For physical-goods export or import research, Aliasearch can add an optional trade-intelligence branch. Users may supply an HS/HSN code, but do not need one: Aliasearch can infer candidate code families from the product description, identify missing classification details, verify current codes, compare trade flows, and search accessible company-level shipment sources. This branch stays off for services, software, local-only searches, and other irrelevant cases.
 
 ## Install
 
@@ -100,6 +103,7 @@ Availability and labels can differ by Claude plan or workspace. The ZIP contains
 
 - Aliasearch instructions and qualification gates
 - intake, research, outreach, and recovery references
+- optional HS/HSN and shipment-data research guidance
 - local Python helpers for normalization and compact evidence packets
 - version and update checker
 
